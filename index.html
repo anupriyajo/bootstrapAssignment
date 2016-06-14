@@ -1,60 +1,154 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Life | Canvas</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/960_12_col.css">
-	<link rel="stylesheet" type="text/css" href="css/style1.css">
-	<link rel="icon" type="image/png" href="images/icon.jpg">
-</head>
-<body>
-	<div class="container_12" >
-		<!--Header section containing links to menu items-->
-		<header>
-			<img src="images/logo1.jpg">
-			<ul class="menu">
-				<li><a href="#">Home</a></li>
-				<li>|</li>
-				<li><a href="#">Features</a></li>
-				<li>|</li>
-				<li><a href="#">Pages</a></li>
-				<li>|</li>
-				<li><a href="#">Blog</a></li>
-			</ul>
-		</header>
-		<!--Header section with menu items completed-->
-		<!--Section with 3 columns started-->
-		<div class="wrap">
-			<div class="grid_4 alpha">
-				<img src="images/22.png" alt="get inspired">
-			</div>
-			<div class="grid_4 box" >
-				<img src="images/44.jpg" alt="plan">
-			</div>
-			<div class="grid_4 omega">
-				<img src="images/33.jpg" alt="goals">
-			</div>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Life | Canvas</title>
+		<meta name="Life" content="life-canvas" charset="utf-8">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!--<link rel="stylesheet" type="text/css" href="css/960_12_col.css">-->
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="includes/css/styles.css" >
+		<link rel="stylesheet" type="text/css" href="css/style1.css">
+		<link rel="icon" type="image/png" href="images/icon.jpg">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+		<div class="container" >
+
+			<!--Header section containing links to menu items-->
+			<div id="main" class="navbar navbar-fixed-top container" >
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="/"><img src="images/logo1.jpg" alt="Your Logo"></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown">
+
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Features</a></li>
+								<li><a href="#">Pages</a></li>
+
+								<li class="divider"></li>
+								<li class="dropdown-header">Heading 1</li>
+
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Done</a></li>
+							</ul><!--dropdown menu ends-->
+
+						</li><!--dropdown ends-->
+
+					</ul>
+
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search ..." id="srchInp">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form><!--navbar form ends-->
+
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a></li>
+							</ul>
+						</li>
+					</ul><!-- end nav pull-right -->
+
+				</div><!--navbar collapse ends-->
+			</div><!--Header section with menu items completed-->
+
+			<!--Section with 3 columns started-->
+		  <div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>Path</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, laborum.</p>
+				</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+			<!-- 3 Column section ended-->
+
+			<!-- hero element section started-->
+			<div class="carousel slide">
+				<div class=" box-hero">
+					<blockquote class="grid_8">Enlightment "Your vision will become clear only when you look into your heart. Who looks outside, dreams. Who looks inside, awakens." </blockquote>
+				</div>
+			</div><!--end carousel slide-->
+			<!--hero section element ended-->
 		</div>
-		<!-- 3 Column section ended-->
-		<!-- hero element section started-->
-		<div class="main-container grid_12">
-			<div class=" box-hero">
-				<blockquote class="grid_8">Enlightment "Your vision will become clear only when you look into your heart. Who looks outside, dreams. Who looks inside, awakens." </blockquote>
-			</div>
-		</div>
-		<!--hero section element ended-->
 		<!--footer section with social media started -->
-		<footer class="grid_12 foot clearfix">
-			<ul>
-				<li><span><img src="images/social/Facebook.jpg"></span>Facebook</li>
-				<li><span><img src="images/social/Twitter.jpg"></span>Twitter</li>
-				<li><span><img src="images/social/youtube.jpg"></span>Youtube</li>
-				<li><span><img src="images/social/Linkedin.jpg"></span>Linkedin</li>
-				<li><span><img src="images/social/Google-plus.jpg"></span>Google Plus</li>
-			</ul>
-		</footer>
-		<!--footer section with social media links ended-->
-	</div>
+		<footer class="container row">
+			<div class="col-sm-2">
+				<h6>Copyright &copy; 2016 Anupriya</h6>
+			</div><!--end col-sm-2-->
+
+			<div class="col-sm-4">
+				<h6>About Us</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div><!--end col-sm-4-->
+
+			<div class="col-sm-2">
+				<h6>Navigation</h6>
+				<ul class="footUl">
+					<li><a href="#">Navigation1</a></li>
+					<li><a href="#">Navigation2</a></li>
+					<li><a href="#">Navigation3</a></li>
+					<li><a href="#">Navigation4</a></li>
+				</ul>
+			</div><!--end col-sm-2-->
+
+			<div class="col-sm-2">
+				<h6>Follow Us</h6>
+				<ul class="footUl">
+					<li><a href="#"><img src="images/social/Facebook.jpg"  alt="facebook"></a></li>
+					<li><a href="#"><img src="images/social/Twitter.jpg" alt=""twitter></a></li>
+					<li><a href="#"><img src="images/social/youtube.jpg" alt="youtube"></a></li>
+					<li><a href="#"><img src="images/social/Linkedin.jpg" alt="linkedin"></a></li>
+					<li><a href="#"><img src="images/social/Google-plus.jpg" alt="googleplus"></a></li>
+				</ul>
+			</div><!--end col-sm-2-->
+
+			<div class="col-sm-2">
+				<h6>Coded by Anu <span class="glyphicon glyphicon-heart"></span></h6>
+			</div><!-- end col-sm-2 -->
+		</footer><!--footer ended-->
+
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
 </body>
 </html>
